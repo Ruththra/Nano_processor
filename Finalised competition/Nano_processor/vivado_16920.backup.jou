@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun May 18 20:58:40 2025
+# Process ID: 16920
+# Current directory: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16776 D:\Uni\2nd sem\Computer Organization and Digital Design\Nano processor\Finalised competition\Nano_processor\Nano_processor.xpr
+# Log file: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/vivado.log
+# Journal file: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/Nano_processor.xpr}
+update_compile_order -fileset sources_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+report_utilization -name utilization_1

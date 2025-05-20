@@ -1,0 +1,111 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 27204
+License: Customer
+
+Current time: 	Tue May 20 10:55:13 IST 2025
+Time zone: 	India Standard Time (Asia/Colombo)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 30 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	ADMIN
+User home directory: C:/Users/ADMIN
+User working directory: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.1
+RDI_DATADIR: C:/Xilinx/Vivado/2018.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.1/bin
+
+Vivado preferences file location: C:/Users/ADMIN/AppData/Roaming/Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: C:/Users/ADMIN/AppData/Roaming/Xilinx/Vivado/2018.1/
+Vivado layouts directory: C:/Users/ADMIN/AppData/Roaming/Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/vivado.log
+Vivado journal file location: 	D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/vivado.jou
+Engine tmp dir: 	D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/.Xil/Vivado-27204-DESKTOP-61TL4JQ
+
+GUI allocated memory:	151 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 525 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 53 MB (+52704kb) [00:00:15]
+// [Engine Memory]: 525 MB (+399124kb) [00:00:15]
+// bv (ch):  Open Project : addNotify
+// Opening Vivado Project: D:\Uni\2nd sem\Computer Organization and Digital Design\Nano processor\Finalised competition\Nano_processor\Nano_processor.xpr. Version: Vivado v2018.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/Nano_processor.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor' 
+// [GUI Memory]: 64 MB (+8886kb) [00:00:16]
+// HMemoryUtils.trashcanNow. Engine heap size: 555 MB. GUI used memory: 33 MB. Current time: 5/20/25 10:55:15 AM IST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/Nano_processor.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 591 MB (+42071kb) [00:00:21]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 647 MB (+27510kb) [00:00:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 700 MB. GUI used memory: 39 MB. Current time: 5/20/25 10:55:32 AM IST
+// Project name: Nano_processor; location: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor; part: xc7a35tcpg236-1
+// [Engine Memory]: 701 MB (+22772kb) [00:00:36]
+// Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 847.645 ; gain = 145.184 
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2018.1 (64-bit)
+# SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Current time: Tue May 20 10:56:30 IST 2025
+# Process ID: 27204
+# OS: Windows 10
+# User: ADMIN
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.ClassCastException: ui.b.c.b.A cannot be cast to javax.swing.DefaultListSelectionModel (See D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/vivado_pid27204.debug)
+*/
+// [GUI Memory]: 67 MB (+479kb) [00:03:24]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 710 MB. GUI used memory: 37 MB. Current time: 5/20/25 12:44:52 PM IST

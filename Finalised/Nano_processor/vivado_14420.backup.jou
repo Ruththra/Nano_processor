@@ -1,0 +1,240 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri May 16 09:58:43 2025
+# Process ID: 14420
+# Current directory: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16916 D:\Uni\2nd sem\Computer Organization and Digital Design\Nano processor\Finalised\Nano_processor\Nano_processor.xpr
+# Log file: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/vivado.log
+# Journal file: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.xpr}
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+export_ip_user_files -of_objects  [get_files {{D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/TB_nanoprocessor.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/TB_nanoprocessor.vhd}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files {{D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/Nano_processor_sim.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/TB_MUX_8_to_4.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/Nano_processor_sim.vhd} {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/TB_MUX_8_to_4.vhd}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/final_tb_nano processor.vhd} w ]
+add_files -fileset sim_1 {{D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/final_tb_nano processor.vhd}}
+update_compile_order -fileset sim_1
+update_files -from_files {{D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/final_tb_nano_processor.vhd}} -to_files {{D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/final_tb_nano processor.vhd}} -filesets [get_filesets *]
+export_ip_user_files -of_objects  [get_files {{D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/final_tb_nano_processor.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/final_tb_nano_processor.vhd}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/Nano_processor_tb.vhd} w ]
+add_files -fileset sim_1 {{D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sim_1/new/Nano_processor_tb.vhd}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source Nano_processor_tb.tcl
+create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
+close_sim
+launch_simulation
+source Nano_processor_tb.tcl
+current_wave_config {Untitled 3}
+add_wave {{/Nano_processor_tb/Reg7_led_tb}} 
+current_wave_config {Untitled 3}
+add_wave {{/Nano_processor_tb/Reg7_led_tb}} 
+close_sim
+launch_simulation
+source Nano_processor_tb.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation
+source Nano_processor_tb.tcl
+current_wave_config {Untitled 5}
+add_wave {{/Nano_processor_tb/slow_clk_tb}} 
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source Nano_processor_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source Nano_processor_tb.tcl
+close_sim
+launch_simulation
+source Nano_processor_tb.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
