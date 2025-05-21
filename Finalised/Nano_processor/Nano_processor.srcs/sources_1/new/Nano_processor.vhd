@@ -30,7 +30,7 @@ entity Nano_processor is
     Port ( 
            Reset : in STD_LOGIC;
            Program_mode : in STD_LOGIC; -- enabling program mode for program ROM
-           new_instruction : in STD_LOGIC_VECTOR (11 downto 0);-- new instruction input
+           new_instruction : in STD_LOGIC_VECTOR (12 downto 0);-- new instruction input
            load_instruction : in STD_LOGIC; -- load new instruction into ROM
            NextROM : in STD_LOGIC; -- next ROM trigger
            ROM_reset : in STD_LOGIC; -- reset signal for program ROM
@@ -41,6 +41,7 @@ entity Nano_processor is
            carry_led : out STD_LOGIC;
            reset_led : out STD_LOGIC;
            load_instruction_led : out STD_LOGIC;
+           error_led : out STD_LOGIC;
            Reg_led : out std_logic_vector(3 downto 0);
            Seg7_digit : out std_logic_vector(6 downto 0);
            Anode : out std_logic_vector(3 downto 0)
@@ -69,10 +70,10 @@ component Program_Rom
     Port ( 
            address : in STD_LOGIC_VECTOR (2 downto 0);
            reset : in STD_LOGIC;
-           input_instruction : in STD_LOGIC_VECTOR (11 downto 0);
+           input_instruction : in STD_LOGIC_VECTOR (12 downto 0);
            program_mode : in STD_LOGIC; -- 1 for program mode, 0 for data mode
            load : in STD_LOGIC; -- Load new instruction into ROM
-           instruction : out STD_LOGIC_VECTOR (11 downto 0);
+           instruction : out STD_LOGIC_VECTOR (12 downto 0);
            clk : in STD_LOGIC; -- Clock signal
            p_signal : out STD_LOGIC; -- Program signal
            load_sig : out STD_LOGIC -- Load signal for external use
@@ -80,8 +81,9 @@ component Program_Rom
 end component;
 component Instruction_decoder 
     Port ( 
-           instruction : in STD_LOGIC_VECTOR (11 downto 0);
-           jump_check : in std_logic_vector (3 downto 0);
+           instruction : in STD_LOGIC_VECTOR (12 downto 0);
+           val_MUX_0 : in std_logic_vector (3 downto 0);
+           val_MUX_1 : in std_logic_vector (3 downto 0);
            reg_en : out STD_LOGIC_VECTOR (2 downto 0);
            load_sel : out STD_LOGIC;
            value : out STD_LOGIC_VECTOR (3 downto 0);
@@ -89,6 +91,7 @@ component Instruction_decoder
            reg_b : out STD_LOGIC_VECTOR (2 downto 0);
            addORsub : out STD_LOGIC;
            jump_flag : out STD_LOGIC;
+           error : out STD_LOGIC;
            jump_address : out STD_LOGIC_VECTOR (2 downto 0)
          );
 end component;
@@ -183,7 +186,7 @@ signal NextROM_prev : std_logic := '0';
 signal NextROM_pulse : std_logic := '0';
 
 --For Instruction Decoder
-signal instruction : STD_LOGIC_VECTOR (11 downto 0);
+signal instruction : STD_LOGIC_VECTOR (12 downto 0);
 signal reg_en : STD_LOGIC_VECTOR (2 downto 0);
 signal load_sel : STD_LOGIC;
 signal value : STD_LOGIC_VECTOR (3 downto 0);
@@ -268,7 +271,8 @@ begin
     Instruction_decoder_inst : Instruction_decoder
         port map (
             instruction => instruction,
-            jump_check => RegVal_0,
+            val_MUX_0 => RegVal_0,
+            val_MUX_1 => RegVal_1,
             reg_en => reg_en,
             load_sel => load_sel,
             value => value,
@@ -276,6 +280,7 @@ begin
             reg_b => reg_b,
             addORsub => addORsub,
             jump_flag => jump_flag,
+            error => error_led,
             jump_address => jump_address
         );
 

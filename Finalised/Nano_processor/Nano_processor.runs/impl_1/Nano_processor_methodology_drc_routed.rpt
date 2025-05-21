@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Wed May 21 14:42:47 2025
+| Date         : Wed May 21 15:58:33 2025
 | Host         : DESKTOP-61TL4JQ running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Nano_processor_methodology_drc_routed.rpt -pb Nano_processor_methodology_drc_routed.pb -rpx Nano_processor_methodology_drc_routed.rpx
 | Design       : Nano_processor
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 68
+             Violations found: 73
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | TIMING-17 | Warning  | Non-clocked sequential cell   | 32         |
-| TIMING-18 | Warning  | Missing input or output delay | 25         |
-| TIMING-20 | Warning  | Non-clocked latch             | 11         |
+| TIMING-18 | Warning  | Missing input or output delay | 26         |
+| TIMING-20 | Warning  | Non-clocked latch             | 15         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -236,140 +236,165 @@ Related violations: <none>
 
 TIMING-18#9 Warning
 Missing input or output delay  
-An input delay is missing on new_instruction[1] relative to clock(s) sys_clk_pin
+An input delay is missing on new_instruction[12] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An input delay is missing on new_instruction[2] relative to clock(s) sys_clk_pin
+An input delay is missing on new_instruction[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An input delay is missing on new_instruction[3] relative to clock(s) sys_clk_pin
+An input delay is missing on new_instruction[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An input delay is missing on new_instruction[4] relative to clock(s) sys_clk_pin
+An input delay is missing on new_instruction[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An input delay is missing on new_instruction[5] relative to clock(s) sys_clk_pin
+An input delay is missing on new_instruction[4] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#14 Warning
 Missing input or output delay  
-An input delay is missing on new_instruction[6] relative to clock(s) sys_clk_pin
+An input delay is missing on new_instruction[5] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#15 Warning
 Missing input or output delay  
-An input delay is missing on new_instruction[7] relative to clock(s) sys_clk_pin
+An input delay is missing on new_instruction[6] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#16 Warning
 Missing input or output delay  
-An input delay is missing on new_instruction[8] relative to clock(s) sys_clk_pin
+An input delay is missing on new_instruction[7] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#17 Warning
 Missing input or output delay  
-An input delay is missing on new_instruction[9] relative to clock(s) sys_clk_pin
+An input delay is missing on new_instruction[8] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#18 Warning
 Missing input or output delay  
-An output delay is missing on Anode[0] relative to clock(s) sys_clk_pin
+An input delay is missing on new_instruction[9] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#19 Warning
 Missing input or output delay  
-An output delay is missing on Anode[1] relative to clock(s) sys_clk_pin
+An output delay is missing on Anode[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#20 Warning
 Missing input or output delay  
-An output delay is missing on Anode[2] relative to clock(s) sys_clk_pin
+An output delay is missing on Anode[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#21 Warning
 Missing input or output delay  
-An output delay is missing on Anode[3] relative to clock(s) sys_clk_pin
+An output delay is missing on Anode[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#22 Warning
 Missing input or output delay  
-An output delay is missing on carry_led relative to clock(s) sys_clk_pin
+An output delay is missing on Anode[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#23 Warning
 Missing input or output delay  
-An output delay is missing on load_instruction_led relative to clock(s) sys_clk_pin
+An output delay is missing on carry_led relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#24 Warning
 Missing input or output delay  
-An output delay is missing on overflow_led relative to clock(s) sys_clk_pin
+An output delay is missing on load_instruction_led relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on overflow_led relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#26 Warning
 Missing input or output delay  
 An output delay is missing on zero_led relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch address_7_reg[0] cannot be properly analyzed as its control pin address_7_reg[0]/G is not reached by a timing clock
+The latch Instruction_decoder_inst/processed_value_reg[0] cannot be properly analyzed as its control pin Instruction_decoder_inst/processed_value_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch address_7_reg[1] cannot be properly analyzed as its control pin address_7_reg[1]/G is not reached by a timing clock
+The latch Instruction_decoder_inst/processed_value_reg[1] cannot be properly analyzed as its control pin Instruction_decoder_inst/processed_value_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch address_7_reg[2] cannot be properly analyzed as its control pin address_7_reg[2]/G is not reached by a timing clock
+The latch Instruction_decoder_inst/processed_value_reg[2] cannot be properly analyzed as its control pin Instruction_decoder_inst/processed_value_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch address_7_reg[3] cannot be properly analyzed as its control pin address_7_reg[3]/G is not reached by a timing clock
+The latch Instruction_decoder_inst/processed_value_reg[3] cannot be properly analyzed as its control pin Instruction_decoder_inst/processed_value_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#5 Warning
 Non-clocked latch  
-The latch seg_out_reg[0] cannot be properly analyzed as its control pin seg_out_reg[0]/G is not reached by a timing clock
+The latch address_7_reg[0] cannot be properly analyzed as its control pin address_7_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#6 Warning
 Non-clocked latch  
-The latch seg_out_reg[1] cannot be properly analyzed as its control pin seg_out_reg[1]/G is not reached by a timing clock
+The latch address_7_reg[1] cannot be properly analyzed as its control pin address_7_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#7 Warning
 Non-clocked latch  
-The latch seg_out_reg[2] cannot be properly analyzed as its control pin seg_out_reg[2]/G is not reached by a timing clock
+The latch address_7_reg[2] cannot be properly analyzed as its control pin address_7_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#8 Warning
 Non-clocked latch  
-The latch seg_out_reg[3] cannot be properly analyzed as its control pin seg_out_reg[3]/G is not reached by a timing clock
+The latch address_7_reg[3] cannot be properly analyzed as its control pin address_7_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#9 Warning
 Non-clocked latch  
-The latch seg_out_reg[4] cannot be properly analyzed as its control pin seg_out_reg[4]/G is not reached by a timing clock
+The latch seg_out_reg[0] cannot be properly analyzed as its control pin seg_out_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#10 Warning
 Non-clocked latch  
-The latch seg_out_reg[5] cannot be properly analyzed as its control pin seg_out_reg[5]/G is not reached by a timing clock
+The latch seg_out_reg[1] cannot be properly analyzed as its control pin seg_out_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#11 Warning
+Non-clocked latch  
+The latch seg_out_reg[2] cannot be properly analyzed as its control pin seg_out_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch seg_out_reg[3] cannot be properly analyzed as its control pin seg_out_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch seg_out_reg[4] cannot be properly analyzed as its control pin seg_out_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch seg_out_reg[5] cannot be properly analyzed as its control pin seg_out_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
 Non-clocked latch  
 The latch seg_out_reg[6] cannot be properly analyzed as its control pin seg_out_reg[6]/G is not reached by a timing clock
 Related violations: <none>
