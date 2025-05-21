@@ -2,8 +2,8 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Mon May 19 12:58:11 2025
-# Process ID: 3968
+# Start of session at: Wed May 21 14:39:59 2025
+# Process ID: 22024
 # Current directory: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/synth_1
 # Command line: vivado.exe -log Nano_processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Nano_processor.tcl
 # Log file: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/synth_1/Nano_processor.vds
@@ -15,27 +15,27 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 22032 
+INFO: Helper process launched with PID 29044 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 435.633 ; gain = 96.777
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 435.070 ; gain = 96.254
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Nano_processor' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:50]
-INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Slow_Clk.vhd:26' bound to instance 'Slow_Clk_inst' of component 'Slow_Clk' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:220]
+INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Slow_Clk.vhd:26' bound to instance 'Slow_Clk_inst' of component 'Slow_Clk' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:231]
 INFO: [Synth 8-638] synthesizing module 'Slow_Clk' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Slow_Clk.vhd:35]
 INFO: [Synth 8-256] done synthesizing module 'Slow_Clk' (1#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Slow_Clk.vhd:35]
-INFO: [Synth 8-3491] module 'Program_counter' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_counter.vhd:25' bound to instance 'Program_counter_inst' of component 'Program_counter' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:228]
+INFO: [Synth 8-3491] module 'Program_counter' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_counter.vhd:25' bound to instance 'Program_counter_inst' of component 'Program_counter' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:239]
 INFO: [Synth 8-638] synthesizing module 'Program_counter' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_counter.vhd:34]
 INFO: [Synth 8-256] done synthesizing module 'Program_counter' (2#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_counter.vhd:34]
-INFO: [Synth 8-3491] module 'LUT_16_7' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/LUT_16_7.vhd:28' bound to instance 'LUT_16_7_inst' of component 'LUT_16_7' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:238]
+INFO: [Synth 8-3491] module 'LUT_16_7' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/LUT_16_7.vhd:28' bound to instance 'LUT_16_7_inst' of component 'LUT_16_7' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:249]
 INFO: [Synth 8-638] synthesizing module 'LUT_16_7' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/LUT_16_7.vhd:35]
 INFO: [Synth 8-256] done synthesizing module 'LUT_16_7' (3#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/LUT_16_7.vhd:35]
-INFO: [Synth 8-3491] module 'Program_Rom' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_Rom.vhd:35' bound to instance 'Program_Rom_inst' of component 'Program_Rom' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:244]
+INFO: [Synth 8-3491] module 'Program_Rom' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_Rom.vhd:35' bound to instance 'Program_Rom_inst' of component 'Program_Rom' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:255]
 INFO: [Synth 8-638] synthesizing module 'Program_Rom' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_Rom.vhd:49]
 INFO: [Synth 8-256] done synthesizing module 'Program_Rom' (4#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_Rom.vhd:49]
-INFO: [Synth 8-3491] module 'Instruction_decoder' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_decoder.vhd:34' bound to instance 'Instruction_decoder_inst' of component 'Instruction_decoder' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:257]
+INFO: [Synth 8-3491] module 'Instruction_decoder' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_decoder.vhd:34' bound to instance 'Instruction_decoder_inst' of component 'Instruction_decoder' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:268]
 INFO: [Synth 8-638] synthesizing module 'Instruction_decoder' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_decoder.vhd:47]
 INFO: [Synth 8-256] done synthesizing module 'Instruction_decoder' (5#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_decoder.vhd:47]
-INFO: [Synth 8-3491] module 'RCA_3' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_3.vhd:27' bound to instance 'RCA_3_inst' of component 'RCA_3' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:271]
+INFO: [Synth 8-3491] module 'RCA_3' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_3.vhd:27' bound to instance 'RCA_3_inst' of component 'RCA_3' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:282]
 INFO: [Synth 8-638] synthesizing module 'RCA_3' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_3.vhd:35]
 INFO: [Synth 8-3491] module 'FA' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_3.vhd:54]
 INFO: [Synth 8-638] synthesizing module 'FA' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/FA.vhd:42]
@@ -47,51 +47,54 @@ INFO: [Synth 8-256] done synthesizing module 'FA' (7#1) [D:/Uni/2nd sem/Computer
 INFO: [Synth 8-3491] module 'FA' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_3.vhd:64]
 INFO: [Synth 8-3491] module 'FA' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_3.vhd:74]
 INFO: [Synth 8-256] done synthesizing module 'RCA_3' (8#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_3.vhd:35]
-INFO: [Synth 8-3491] module 'MUX_2way_3bit' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_2way_3bit.vhd:34' bound to instance 'MUX_2way_3bit_inst' of component 'MUX_2way_3bit' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:284]
+INFO: [Synth 8-3491] module 'MUX_2way_3bit' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_2way_3bit.vhd:34' bound to instance 'MUX_2way_3bit_inst' of component 'MUX_2way_3bit' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:295]
 INFO: [Synth 8-638] synthesizing module 'MUX_2way_3bit' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_2way_3bit.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'MUX_2way_3bit' (9#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_2way_3bit.vhd:41]
-INFO: [Synth 8-3491] module 'MUX_2way_4bit' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_2way_4bit.vhd:34' bound to instance 'MUX_2way_4bit_inst' of component 'MUX_2way_4bit' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:292]
+INFO: [Synth 8-3491] module 'MUX_2way_4bit' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_2way_4bit.vhd:34' bound to instance 'MUX_2way_4bit_inst' of component 'MUX_2way_4bit' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:303]
 INFO: [Synth 8-638] synthesizing module 'MUX_2way_4bit' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_2way_4bit.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'MUX_2way_4bit' (10#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_2way_4bit.vhd:41]
-INFO: [Synth 8-3491] module 'RCA_4' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_4.vhd:27' bound to instance 'RCA_4_inst' of component 'RCA_4' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:300]
+INFO: [Synth 8-3491] module 'RCA_4' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_4.vhd:27' bound to instance 'RCA_4_inst' of component 'RCA_4' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:311]
 INFO: [Synth 8-638] synthesizing module 'RCA_4' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_4.vhd:38]
 INFO: [Synth 8-3491] module 'FA' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_4.vhd:61]
 INFO: [Synth 8-3491] module 'FA' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_4.vhd:71]
 INFO: [Synth 8-3491] module 'FA' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_4.vhd:81]
 INFO: [Synth 8-3491] module 'FA' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_3' of component 'FA' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_4.vhd:91]
 INFO: [Synth 8-256] done synthesizing module 'RCA_4' (11#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_4.vhd:38]
-INFO: [Synth 8-3491] module 'Reg_bank_8' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:25' bound to instance 'Reg_bank_8_inst' of component 'Reg_bank_8' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:319]
+INFO: [Synth 8-3491] module 'Reg_bank_8' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:25' bound to instance 'Reg_bank_8_inst' of component 'Reg_bank_8' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:330]
 INFO: [Synth 8-638] synthesizing module 'Reg_bank_8' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:36]
-INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Decoder_3_to_8.vhd:26' bound to instance 'Decoder_3_to_8_0' of component 'Decoder_3_to_8' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:59]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Decoder_3_to_8.vhd:26' bound to instance 'Decoder_3_to_8_0' of component 'Decoder_3_to_8' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:60]
 INFO: [Synth 8-638] synthesizing module 'Decoder_3_to_8' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Decoder_3_to_8.vhd:33]
 INFO: [Synth 8-256] done synthesizing module 'Decoder_3_to_8' (12#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Decoder_3_to_8.vhd:33]
-INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_0' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:65]
+INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_0' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:66]
 INFO: [Synth 8-638] synthesizing module 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:36]
 INFO: [Synth 8-256] done synthesizing module 'Reg' (13#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:36]
-INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_1' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:74]
-INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_2' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:83]
-INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_3' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:92]
-INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_4' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:101]
-INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_5' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:110]
-INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_6' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:119]
-INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_7' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:128]
+INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_1' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:75]
+INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_2' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:84]
+INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_3' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:93]
+INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_4' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:102]
+INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_5' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:111]
+INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_6' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:120]
+INFO: [Synth 8-3491] module 'Reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_7' of component 'Reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:129]
 INFO: [Synth 8-256] done synthesizing module 'Reg_bank_8' (14#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg_bank_8.vhd:36]
-INFO: [Synth 8-3491] module 'MUX_8way_4bit' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_8way_4bit.vhd:24' bound to instance 'MUX_8way_4bit_0' of component 'MUX_8way_4bit' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:335]
+INFO: [Synth 8-3491] module 'MUX_8way_4bit' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_8way_4bit.vhd:24' bound to instance 'MUX_8way_4bit_0' of component 'MUX_8way_4bit' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:346]
 INFO: [Synth 8-638] synthesizing module 'MUX_8way_4bit' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_8way_4bit.vhd:37]
 INFO: [Synth 8-226] default block is never used [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_8way_4bit.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'MUX_8way_4bit' (15#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_8way_4bit.vhd:37]
-INFO: [Synth 8-3491] module 'MUX_8way_4bit' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_8way_4bit.vhd:24' bound to instance 'MUX_8way_4bit_1' of component 'MUX_8way_4bit' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:348]
-WARNING: [Synth 8-614] signal 'Out_0' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:415]
-WARNING: [Synth 8-614] signal 'Out_1' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:415]
-WARNING: [Synth 8-614] signal 'Out_2' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:415]
-WARNING: [Synth 8-614] signal 'Out_3' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:415]
-WARNING: [Synth 8-614] signal 'Out_4' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:415]
-WARNING: [Synth 8-614] signal 'Out_5' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:415]
-WARNING: [Synth 8-614] signal 'Out_6' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:415]
-WARNING: [Synth 8-614] signal 'Out_7' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:415]
-INFO: [Synth 8-256] done synthesizing module 'Nano_processor' (16#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:50]
+INFO: [Synth 8-3491] module 'MUX_8way_4bit' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_8way_4bit.vhd:24' bound to instance 'MUX_8way_4bit_1' of component 'MUX_8way_4bit' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:359]
+INFO: [Synth 8-3491] module 'Program_mode_reg' declared at 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_mode_reg.vhd:25' bound to instance 'Program_mode_reg_inst' of component 'Program_mode_reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'Program_mode_reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_mode_reg.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Program_mode_reg' (16#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_mode_reg.vhd:33]
+WARNING: [Synth 8-614] signal 'Out_0' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:435]
+WARNING: [Synth 8-614] signal 'Out_1' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:435]
+WARNING: [Synth 8-614] signal 'Out_2' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:435]
+WARNING: [Synth 8-614] signal 'Out_3' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:435]
+WARNING: [Synth 8-614] signal 'Out_4' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:435]
+WARNING: [Synth 8-614] signal 'Out_5' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:435]
+WARNING: [Synth 8-614] signal 'Out_6' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:435]
+WARNING: [Synth 8-614] signal 'Out_7' is read in the process but is not in the sensitivity list [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:435]
+INFO: [Synth 8-256] done synthesizing module 'Nano_processor' (17#1) [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:50]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 491.227 ; gain = 152.371
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 491.324 ; gain = 152.508
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -104,10 +107,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 491.227 ; gain = 152.371
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 491.324 ; gain = 152.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 491.227 ; gain = 152.371
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 491.324 ; gain = 152.508
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -126,22 +129,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 822.410 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 824.875 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 822.410 ; gain = 483.555
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 824.875 ; gain = 486.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 822.410 ; gain = 483.555
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 824.875 ; gain = 486.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 822.410 ; gain = 483.555
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 824.875 ; gain = 486.059
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "sevenSegment_ROM" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "program_ROM_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -155,10 +158,10 @@ INFO: [Synth 8-5544] ROM "program_ROM_reg[7]" won't be mapped to Block RAM becau
 INFO: [Synth 8-5544] ROM "load_sel" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "jump_flag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "zero_led" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'seg_out_reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:434]
-WARNING: [Synth 8-327] inferring latch for variable 'address_7_reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:240]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_out_reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:454]
+WARNING: [Synth 8-327] inferring latch for variable 'address_7_reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Nano_processor.vhd:251]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 822.410 ; gain = 483.555
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 824.875 ; gain = 486.059
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -179,7 +182,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 8     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 6     
+	                1 Bit    Registers := 15    
 +---Muxes : 
 	   9 Input      8 Bit        Muxes := 1     
 	  17 Input      7 Bit        Muxes := 1     
@@ -261,6 +264,11 @@ Module Reg
 Detailed RTL Component Info : 
 +---Registers : 
 	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Program_mode_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -278,20 +286,29 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5544] ROM "zero_led" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'Reg_bank_8_inst/Reg_1/reset_sig_reg' into 'Reg_bank_8_inst/Reg_0/reset_sig_reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
+INFO: [Synth 8-4471] merging register 'Reg_bank_8_inst/Reg_2/reset_sig_reg' into 'Reg_bank_8_inst/Reg_0/reset_sig_reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
+INFO: [Synth 8-4471] merging register 'Reg_bank_8_inst/Reg_3/reset_sig_reg' into 'Reg_bank_8_inst/Reg_0/reset_sig_reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
+INFO: [Synth 8-4471] merging register 'Reg_bank_8_inst/Reg_4/reset_sig_reg' into 'Reg_bank_8_inst/Reg_0/reset_sig_reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
+INFO: [Synth 8-4471] merging register 'Reg_bank_8_inst/Reg_5/reset_sig_reg' into 'Reg_bank_8_inst/Reg_0/reset_sig_reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
+INFO: [Synth 8-4471] merging register 'Reg_bank_8_inst/Reg_6/reset_sig_reg' into 'Reg_bank_8_inst/Reg_0/reset_sig_reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
+INFO: [Synth 8-4471] merging register 'Reg_bank_8_inst/Reg_7/reset_sig_reg' into 'Reg_bank_8_inst/Reg_0/reset_sig_reg' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element Reg_bank_8_inst/Reg_1/reset_sig_reg was removed.  [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element Reg_bank_8_inst/Reg_2/reset_sig_reg was removed.  [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element Reg_bank_8_inst/Reg_3/reset_sig_reg was removed.  [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element Reg_bank_8_inst/Reg_4/reset_sig_reg was removed.  [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element Reg_bank_8_inst/Reg_5/reset_sig_reg was removed.  [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element Reg_bank_8_inst/Reg_6/reset_sig_reg was removed.  [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element Reg_bank_8_inst/Reg_7/reset_sig_reg was removed.  [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd:45]
 INFO: [Synth 8-5544] ROM "Reg_bank_8_inst/Decoder_3_to_8_0/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-WARNING: [Synth 8-3917] design Nano_processor has port load_instruction_led driven by constant 0
 WARNING: [Synth 8-3917] design Nano_processor has port Anode[1] driven by constant 1
 INFO: [Synth 8-3886] merging instance 'Reg_bank_8_inst/Reg_0/Q_reg[3]' (FDCE) to 'Reg_bank_8_inst/Reg_0/Q_reg[2]'
 INFO: [Synth 8-3886] merging instance 'Reg_bank_8_inst/Reg_0/Q_reg[2]' (FDCE) to 'Reg_bank_8_inst/Reg_0/Q_reg[1]'
 INFO: [Synth 8-3886] merging instance 'Reg_bank_8_inst/Reg_0/Q_reg[1]' (FDCE) to 'Reg_bank_8_inst/Reg_0/Q_reg[0]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_bank_8_inst/Reg_0/Q_reg[0] )
-WARNING: [Synth 8-3332] Sequential element (Program_Rom_inst/load_sig_reg) is unused and will be removed from module Nano_processor.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net load_sig with 1st driver pin 'Program_Rom_inst/load_sig_reg/Q' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_Rom.vhd:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net load_sig with 2nd driver pin 'GND' [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_Rom.vhd:73]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net load_sig is connected to constant driver, other driver is ignored [D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_Rom.vhd:73]
 WARNING: [Synth 8-3332] Sequential element (Reg_bank_8_inst/Reg_0/Q_reg[0]) is unused and will be removed from module Nano_processor.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 822.410 ; gain = 483.555
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 824.875 ; gain = 486.059
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -303,13 +320,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 822.410 ; gain = 483.555
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 824.875 ; gain = 486.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 822.941 ; gain = 484.086
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 850.652 ; gain = 511.836
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -321,7 +338,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 832.930 ; gain = 494.074
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 859.695 ; gain = 520.879
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -345,7 +362,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 832.930 ; gain = 494.074
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 859.695 ; gain = 520.879
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -358,7 +375,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 832.930 ; gain = 494.074
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 859.695 ; gain = 520.879
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -370,25 +387,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 832.930 ; gain = 494.074
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 859.695 ; gain = 520.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 832.930 ; gain = 494.074
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 859.695 ; gain = 520.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 832.930 ; gain = 494.074
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 859.695 ; gain = 520.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 832.930 ; gain = 494.074
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 859.695 ; gain = 520.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -407,42 +424,45 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |    11|
 |3     |LUT1   |     2|
-|4     |LUT2   |    36|
-|5     |LUT3   |    11|
-|6     |LUT4   |    12|
-|7     |LUT5   |    41|
-|8     |LUT6   |    68|
+|4     |LUT2   |    37|
+|5     |LUT3   |    10|
+|6     |LUT4   |    10|
+|7     |LUT5   |    43|
+|8     |LUT6   |    65|
 |9     |MUXF7  |    16|
 |10    |FDCE   |    57|
-|11    |FDRE   |   131|
-|12    |LD     |    11|
-|13    |IBUF   |    21|
-|14    |OBUF   |    19|
+|11    |FDPE   |     1|
+|12    |FDRE   |   133|
+|13    |LD     |    11|
+|14    |IBUF   |    21|
+|15    |OBUF   |    20|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+-----------------------+----------------+------+
-|      |Instance               |Module          |Cells |
-+------+-----------------------+----------------+------+
-|1     |top                    |                |   437|
-|2     |  Program_Rom_inst     |Program_Rom     |   215|
-|3     |  Program_counter_inst |Program_counter |    16|
-|4     |  Reg_bank_8_inst      |Reg_bank_8      |    49|
-|5     |    Reg_1              |Reg             |     4|
-|6     |    Reg_2              |Reg_0           |     4|
-|7     |    Reg_3              |Reg_1           |    17|
-|8     |    Reg_4              |Reg_2           |     4|
-|9     |    Reg_5              |Reg_3           |     4|
-|10    |    Reg_6              |Reg_4           |     4|
-|11    |    Reg_7              |Reg_5           |    12|
-|12    |  Slow_Clk_inst        |Slow_Clk        |    61|
-+------+-----------------------+----------------+------+
++------+------------------------+-----------------+------+
+|      |Instance                |Module           |Cells |
++------+------------------------+-----------------+------+
+|1     |top                     |                 |   438|
+|2     |  Program_Rom_inst      |Program_Rom      |   212|
+|3     |  Program_counter_inst  |Program_counter  |    15|
+|4     |  Program_mode_reg_inst |Program_mode_reg |     2|
+|5     |  Reg_bank_8_inst       |Reg_bank_8       |    51|
+|6     |    Reg_0               |Reg              |     1|
+|7     |    Reg_1               |Reg_0            |     9|
+|8     |    Reg_2               |Reg_1            |     4|
+|9     |    Reg_3               |Reg_2            |    13|
+|10    |    Reg_4               |Reg_3            |     8|
+|11    |    Reg_5               |Reg_4            |     4|
+|12    |    Reg_6               |Reg_5            |     4|
+|13    |    Reg_7               |Reg_6            |     8|
+|14    |  Slow_Clk_inst         |Slow_Clk         |    61|
++------+------------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 832.930 ; gain = 494.074
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 859.695 ; gain = 520.879
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 3 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 832.930 ; gain = 162.891
-Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 832.930 ; gain = 494.074
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 859.695 ; gain = 187.328
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 859.695 ; gain = 520.879
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 59 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -453,10 +473,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LD => LDCE: 11 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-93 Infos, 15 Warnings, 4 Critical Warnings and 0 Errors encountered.
+103 Infos, 20 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 832.930 ; gain = 506.172
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 859.695 ; gain = 532.785
 INFO: [Common 17-1381] The checkpoint 'D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.runs/synth_1/Nano_processor.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Nano_processor_utilization_synth.rpt -pb Nano_processor_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 832.930 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon May 19 12:59:16 2025...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 859.695 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 21 14:41:05 2025...

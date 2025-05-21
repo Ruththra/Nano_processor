@@ -46,7 +46,56 @@ end Instruction_decoder;
 
 architecture Behavioral of Instruction_decoder is
 
+--     component Decoder_2_to_4
+--         Port ( I : in STD_LOGIC_VECTOR (1 downto 0);
+--             --    EN : in STD_LOGIC;
+--                Y : out STD_LOGIC_VECTOR (3 downto 0));
+--     end component;
+
+-- signal Add, Neg, Jump : STD_LOGIC;
+-- -- signal mov : STD_LOGIC;
+-- signal decoder_out : STD_LOGIC_VECTOR (3 downto 0);
+-- signal jump_check_reg : STD_LOGIC_VECTOR (3 downto 0);
+
+
 begin
+    -- -- Decoder_2_to_4_inst : Decoder_2_to_4
+    -- Decoder_2_to_4_inst : Decoder_2_to_4
+    --     port map (
+    --         I => instruction(11 downto 10),
+    --         -- EN => '1',
+    --         Y => decoder_out
+    --     );
+
+    -- -- Assigning the decoder outputs to the respective signals
+    -- Add <= decoder_out(0);
+    -- Neg <= decoder_out(1);
+    -- -- Mov <= decoder_out(2);
+    -- Jump <= decoder_out(3);
+
+    -- -- Assigning the signal based on the instruction
+    -- load_sel <= Add or Neg;
+    -- value <= instruction(3 downto 0);
+    -- reg_en(0) <= instruction(7) and (not Jump);
+    -- reg_en(1) <= instruction(8) and (not Jump);
+    -- reg_en(2) <= instruction(9) and (not Jump);
+    -- reg_a <= instruction(9 downto 7);
+    -- reg_b <= instruction(6 downto 4);
+    -- addORsub <= Neg;
+
+
+    -- -- Jump logic
+    -- jump_check_reg <= jump_check;
+    -- jump_flag <= Jump and (not (jump_check_reg(3) or jump_check_reg(2) or jump_check_reg(1) or jump_check_reg(0)));
+    -- jump_address <= instruction(2 downto 0);
+
+
+
+
+
+
+
+
 
     process (instruction, jump_check)
     begin

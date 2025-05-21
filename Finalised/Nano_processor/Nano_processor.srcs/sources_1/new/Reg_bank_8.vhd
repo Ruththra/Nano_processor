@@ -27,7 +27,7 @@ entity Reg_bank_8 is
            RegSel : in STD_LOGIC_VECTOR (2 downto 0);
            Clk : in STD_LOGIC;                  -- Clock signal
            Reset : in STD_LOGIC;                -- Reset signal
-        --    reset_sig : out STD_LOGIC;            -- Reset signal for external use
+           reset_sig : out STD_LOGIC;            -- Reset signal for external use
            Input: in STD_LOGIC_VECTOR (3 downto 0); -- 4-bit input data
            Out_0, Out_1, Out_2, Out_3, Out_4, Out_5, Out_6, Out_7 : out STD_LOGIC_VECTOR (3 downto 0) -- 4-bit output data
          );
@@ -41,7 +41,7 @@ component Reg
            En : in STD_LOGIC;                   -- Enable signal
            Clk : in STD_LOGIC;                  -- Clock signal
            Reset : in STD_LOGIC;                -- Reset signal
-        --    reset_sig : out STD_LOGIC;            -- Reset signal for external use
+           reset_sig : out STD_LOGIC;            -- Reset signal for external use
            Q : out STD_LOGIC_VECTOR (3 downto 0) -- 4-bit output data
          );
 end component;
@@ -53,6 +53,7 @@ component Decoder_3_to_8
 end component;
 -- Internal signals
 signal RegEn : STD_LOGIC_VECTOR (7 downto 0); -- Enable signals for registers
+signal reset_sig_0, reset_sig_1, reset_sig_2, reset_sig_3, reset_sig_4, reset_sig_5, reset_sig_6, reset_sig_7 : STD_LOGIC;
 
 begin
 --Instantiate the 3-to-8 decoder
@@ -68,8 +69,8 @@ Reg_0 : Reg
         En => RegEn(0),
         Clk => Clk,
         Reset => Reset,
-        Q => Out_0
-        -- reset_sig => reset_sig
+        Q => Out_0,
+        reset_sig => reset_sig_0
     );
 Reg_1 : Reg
     port map(
@@ -77,8 +78,8 @@ Reg_1 : Reg
         En => RegEn(1),
         Clk => Clk,
         Reset => Reset,
-        Q => Out_1
-        -- reset_sig => reset_sig
+        Q => Out_1,
+        reset_sig => reset_sig_1
     );
 Reg_2 : Reg
     port map(
@@ -86,8 +87,8 @@ Reg_2 : Reg
         En => RegEn(2),
         Clk => Clk,
         Reset => Reset,
-        Q => Out_2
-        -- reset_sig => reset_sig
+        Q => Out_2,
+        reset_sig => reset_sig_2
     );
 Reg_3 : Reg
     port map(
@@ -95,8 +96,8 @@ Reg_3 : Reg
         En => RegEn(3),
         Clk => Clk,
         Reset => Reset,
-        Q => Out_3
-        -- reset_sig => reset_sig
+        Q => Out_3,
+        reset_sig => reset_sig_3
     );
 Reg_4 : Reg
     port map(
@@ -104,8 +105,8 @@ Reg_4 : Reg
         En => RegEn(4),
         Clk => Clk,
         Reset => Reset,
-        Q => Out_4
-        -- reset_sig => reset_sig
+        Q => Out_4,
+        reset_sig => reset_sig_4
     );
 Reg_5 : Reg
     port map(
@@ -113,8 +114,8 @@ Reg_5 : Reg
         En => RegEn(5),
         Clk => Clk,
         Reset => Reset,
-        Q => Out_5
-        -- reset_sig => reset_sig
+        Q => Out_5,
+        reset_sig => reset_sig_5
     );
 Reg_6 : Reg
     port map(
@@ -122,8 +123,8 @@ Reg_6 : Reg
         En => RegEn(6),
         Clk => Clk,
         Reset => Reset,
-        Q => Out_6
-        -- reset_sig => reset_sig
+        Q => Out_6,
+        reset_sig => reset_sig_6
     );
 Reg_7 : Reg
     port map(
@@ -131,9 +132,10 @@ Reg_7 : Reg
         En => RegEn(7),
         Clk => Clk,
         Reset => Reset,
-        Q => Out_7
-        -- reset_sig => reset_sig
+        Q => Out_7,
+        reset_sig => reset_sig_7
     );
 
+    reset_sig <= reset_sig_0 or reset_sig_1 or reset_sig_2 or reset_sig_3 or reset_sig_4 or reset_sig_5 or reset_sig_6 or reset_sig_7;
 
 end Behavioral;

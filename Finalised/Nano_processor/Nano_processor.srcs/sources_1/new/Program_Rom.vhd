@@ -70,12 +70,13 @@ signal program_ROM : rom_type :=(
 begin
 
     --default values
-    load_sig <= '0';
+    -- load_sig <= '0';
     process(clk, reset, load, program_mode, address, input_instruction)
     begin
         if rising_edge(clk) then
             if program_mode = '1' then
                 p_signal <= '1'; -- Indicate that the program is in programming mode
+                load_sig <= '0'; -- Clear load signal
                 if reset = '1' then
                     program_ROM <= (others => (others => '0')); -- Clear all ROM contents
                     instruction <= (others => '0'); -- Reset instruction output to zero
@@ -85,6 +86,7 @@ begin
 
                 end if;
             elsif program_mode = '0' then
+                load_sig <= '0'; -- Clear load signal
                 p_signal <= '0'; -- Indicate that the program is in data mode
                 instruction <= program_ROM(to_integer(unsigned(address))); -- Read instruction from ROM
             end if;

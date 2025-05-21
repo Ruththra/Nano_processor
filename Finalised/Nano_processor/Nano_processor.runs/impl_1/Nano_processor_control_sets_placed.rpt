@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Mon May 19 13:00:21 2025
+| Date         : Wed May 21 14:42:10 2025
 | Host         : DESKTOP-61TL4JQ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Nano_processor_control_sets_placed.rpt
 | Design       : Nano_processor
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    21 |
-| Unused register locations in slices containing registers |    81 |
+| Number of unique control sets                            |    23 |
+| Unused register locations in slices containing registers |    94 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,6 +34,7 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
+|      1 |            2 |
 |      3 |            1 |
 |      4 |            8 |
 |      7 |            1 |
@@ -48,42 +49,44 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              34 |           11 |
-| No           | No                    | Yes                    |              29 |            8 |
-| No           | Yes                   | No                     |               0 |            0 |
+| No           | No                    | No                     |              35 |           12 |
+| No           | No                    | Yes                    |              30 |            9 |
+| No           | Yes                   | No                     |               1 |            1 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              28 |            9 |
-| Yes          | Yes                   | No                     |             108 |           38 |
+| Yes          | No                    | Yes                    |              28 |           14 |
+| Yes          | Yes                   | No                     |             108 |           36 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------+------------------------------------------------+---------------------------------------------+------------------+----------------+
-|        Clock Signal       |                  Enable Signal                 |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
-+---------------------------+------------------------------------------------+---------------------------------------------+------------------+----------------+
-|  Slow_Clk_inst/Reg_reg[0] |                                                | Reset_IBUF                                  |                1 |              3 |
-|  Slow_Clk_inst/CLK        | Program_Rom_inst/Q_reg[0][0]                   | Reset_IBUF                                  |                1 |              4 |
-|  Slow_Clk_inst/CLK        | Program_Rom_inst/Q_reg[0]_1[0]                 | Reset_IBUF                                  |                2 |              4 |
-|  Slow_Clk_inst/CLK        | Program_Rom_inst/Q_reg[0]_0[0]                 | Reset_IBUF                                  |                1 |              4 |
-|  Slow_Clk_inst/CLK        | Program_Rom_inst/Q_reg[0]_2[0]                 | Reset_IBUF                                  |                1 |              4 |
-|  Slow_Clk_inst/CLK        | Program_Rom_inst/Q_reg[0]_3[0]                 | Reset_IBUF                                  |                1 |              4 |
-|  Slow_Clk_inst/CLK        | Program_Rom_inst/Q_reg[0]_4[0]                 | Reset_IBUF                                  |                2 |              4 |
-|  Slow_Clk_inst/CLK        | Program_Rom_inst/Q_reg[0]_5[0]                 | Reset_IBUF                                  |                1 |              4 |
-|  address_7_reg[3]_i_2_n_0 |                                                |                                             |                1 |              4 |
-|  Program_Rom_inst/E[0]    |                                                |                                             |                3 |              7 |
-|  clk_IBUF_BUFG            | Program_Rom_inst/instruction[11]_i_1_n_0       | Program_Rom_inst/program_ROM[0][11]_i_1_n_0 |                7 |             12 |
-|  clk_IBUF_BUFG            | Program_counter_inst/program_ROM_reg[7][11][0] | Program_Rom_inst/program_ROM[0][11]_i_1_n_0 |                4 |             12 |
-|  clk_IBUF_BUFG            | Program_counter_inst/program_ROM_reg[4][11][0] | Program_Rom_inst/program_ROM[0][11]_i_1_n_0 |                4 |             12 |
-|  clk_IBUF_BUFG            | Program_counter_inst/program_ROM_reg[6][11][0] | Program_Rom_inst/program_ROM[0][11]_i_1_n_0 |                5 |             12 |
-|  clk_IBUF_BUFG            | Program_counter_inst/program_ROM_reg[2][11][0] | Program_Rom_inst/program_ROM[0][11]_i_1_n_0 |                3 |             12 |
-|  clk_IBUF_BUFG            | Program_counter_inst/program_ROM_reg[1][11][0] | Program_Rom_inst/program_ROM[0][11]_i_1_n_0 |                3 |             12 |
-|  clk_IBUF_BUFG            | Program_counter_inst/program_ROM_reg[0][11][0] | Program_Rom_inst/program_ROM[0][11]_i_1_n_0 |                3 |             12 |
-|  clk_IBUF_BUFG            | Program_counter_inst/program_ROM_reg[3][11][0] | Program_Rom_inst/program_ROM[0][11]_i_1_n_0 |                4 |             12 |
-|  clk_IBUF_BUFG            | Program_counter_inst/program_ROM_reg[5][11][0] | Program_Rom_inst/program_ROM[0][11]_i_1_n_0 |                5 |             12 |
-|  clk_IBUF_BUFG            |                                                |                                             |                7 |             23 |
-|  clk_IBUF_BUFG            |                                                | Reset_IBUF                                  |                7 |             26 |
-+---------------------------+------------------------------------------------+---------------------------------------------+------------------+----------------+
++------------------------------------+------------------------------------------------+-----------------------------------+------------------+----------------+
+|            Clock Signal            |                  Enable Signal                 |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++------------------------------------+------------------------------------------------+-----------------------------------+------------------+----------------+
+|  Slow_Clk_inst/slow_clock          |                                                | Reset_IBUF                        |                1 |              1 |
+|  clk_IBUF_BUFG                     |                                                | Program_Rom_inst/load_sig_i_1_n_0 |                1 |              1 |
+|  Slow_Clk_inst/CLK                 |                                                | Reset_IBUF                        |                1 |              3 |
+|  Slow_Clk_inst/slow_clock          | Program_Rom_inst/E[0]                          | Reset_IBUF                        |                2 |              4 |
+|  Slow_Clk_inst/slow_clock          | Program_Rom_inst/Q_reg[0]_0[0]                 | Reset_IBUF                        |                1 |              4 |
+|  Slow_Clk_inst/slow_clock          | Program_Rom_inst/Q_reg[3]_0[0]                 | Reset_IBUF                        |                2 |              4 |
+|  Slow_Clk_inst/slow_clock          | Program_Rom_inst/Q_reg[3]_2[0]                 | Reset_IBUF                        |                2 |              4 |
+|  Slow_Clk_inst/slow_clock          | Program_Rom_inst/Q_reg[3]_1[0]                 | Reset_IBUF                        |                3 |              4 |
+|  Slow_Clk_inst/slow_clock          | Program_Rom_inst/Q_reg[0]_1[0]                 | Reset_IBUF                        |                1 |              4 |
+|  Slow_Clk_inst/slow_clock          | Program_Rom_inst/Q_reg[0][0]                   | Reset_IBUF                        |                3 |              4 |
+|  address_7_reg[3]_i_2_n_0          |                                                |                                   |                1 |              4 |
+|  Program_Rom_inst/Seg7_digit[0][0] |                                                |                                   |                2 |              7 |
+|  clk_IBUF_BUFG                     | Program_Rom_inst/instruction[11]_i_1_n_0       | Program_Rom_inst/load_sig_i_1_n_0 |                7 |             12 |
+|  clk_IBUF_BUFG                     | Program_counter_inst/program_ROM_reg[7][11][0] | Program_Rom_inst/load_sig_i_1_n_0 |                4 |             12 |
+|  clk_IBUF_BUFG                     | Program_counter_inst/program_ROM_reg[0][11][0] | Program_Rom_inst/load_sig_i_1_n_0 |                3 |             12 |
+|  clk_IBUF_BUFG                     | Program_counter_inst/program_ROM_reg[3][11][0] | Program_Rom_inst/load_sig_i_1_n_0 |                3 |             12 |
+|  clk_IBUF_BUFG                     | Program_counter_inst/program_ROM_reg[6][11][0] | Program_Rom_inst/load_sig_i_1_n_0 |                4 |             12 |
+|  clk_IBUF_BUFG                     | Program_counter_inst/program_ROM_reg[1][11][0] | Program_Rom_inst/load_sig_i_1_n_0 |                3 |             12 |
+|  clk_IBUF_BUFG                     | Program_counter_inst/program_ROM_reg[5][11][0] | Program_Rom_inst/load_sig_i_1_n_0 |                4 |             12 |
+|  clk_IBUF_BUFG                     | Program_counter_inst/program_ROM_reg[2][11][0] | Program_Rom_inst/load_sig_i_1_n_0 |                4 |             12 |
+|  clk_IBUF_BUFG                     | Program_counter_inst/program_ROM_reg[4][11][0] | Program_Rom_inst/load_sig_i_1_n_0 |                4 |             12 |
+|  clk_IBUF_BUFG                     |                                                |                                   |                9 |             24 |
+|  clk_IBUF_BUFG                     |                                                | Reset_IBUF                        |                7 |             26 |
++------------------------------------+------------------------------------------------+-----------------------------------+------------------+----------------+
 
 

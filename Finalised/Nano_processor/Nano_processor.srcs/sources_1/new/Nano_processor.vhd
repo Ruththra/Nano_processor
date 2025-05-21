@@ -39,7 +39,7 @@ entity Nano_processor is
            overflow_led : out STD_LOGIC;   
            zero_led : out STD_LOGIC;
            carry_led : out STD_LOGIC;
-        --    reset_led : out STD_LOGIC;
+           reset_led : out STD_LOGIC;
            load_instruction_led : out STD_LOGIC;
            Reg_led : out std_logic_vector(3 downto 0);
            Seg7_digit : out std_logic_vector(6 downto 0);
@@ -131,7 +131,7 @@ component Reg_bank_8
            Clk : in STD_LOGIC;                  -- Clock signal
            Reset : in STD_LOGIC;                -- Reset signal
            Input: in STD_LOGIC_VECTOR (3 downto 0); -- 4-bit input data
-        --    reset_sig : out STD_LOGIC;            -- Reset signal for external use
+           reset_sig : out STD_LOGIC;            -- Reset signal for external use
            Out_0, Out_1, Out_2, Out_3, Out_4, Out_5, Out_6, Out_7 : out STD_LOGIC_VECTOR (3 downto 0) -- 4-bit output data
          );
 end component;
@@ -157,11 +157,21 @@ component Slow_Clk
            Clk_out : out STD_LOGIC
          );
 end component;
+component Program_mode_reg
+    Port ( 
+        En    : in  STD_LOGIC;
+        Clk   : in  STD_LOGIC;
+        Q     : out STD_LOGIC
+    );
+end component;
+
+
 -- For Clock
 signal slow_clock : STD_LOGIC;
 --To stop the clock when in program mode
 signal Program_mode_sync : std_logic := '0';
 signal Program_mode_sync2 : std_logic := '0';
+signal Program_trig : std_logic := '0';
 
 --For Program Counter
 signal RomEn : STD_LOGIC_VECTOR (2 downto 0);
@@ -192,6 +202,7 @@ signal RegVal_0, RegVal_1 : STD_LOGIC_VECTOR (3 downto 0);
 
 --For Reg Bank
 signal OutputVal : STD_LOGIC_VECTOR (3 downto 0);
+signal reset_led_sig : STD_LOGIC:='0';
 signal Out_0, Out_1, Out_2, Out_3, Out_4, Out_5, Out_6, Out_7 : STD_LOGIC_VECTOR (3 downto 0);
 -- signal reset_led_sig : STD_LOGIC;
 
@@ -208,7 +219,7 @@ signal data_7 : std_logic_vector(6 downto 0);
 signal seg_out : std_logic_vector(6 downto 0);
 
 --For Rom
-signal load_instruction_sig : std_logic;
+signal load_instruction_sig : std_logic:='0';
 
 begin
 
@@ -329,8 +340,8 @@ begin
            Out_4 => Out_4,
            Out_5 => Out_5,
            Out_6 => Out_6,
-           Out_7 => Out_7
-        --    reset_sig => reset_led_sig
+           Out_7 => Out_7,
+           reset_sig => reset_led_sig
          );
     MUX_8way_4bit_0 : MUX_8way_4bit
         port map (
@@ -359,12 +370,23 @@ begin
            RegVal => RegVal_1
          );
 
+    Program_mode_reg_inst : Program_mode_reg
+        port map (
+            En => Program_mode,
+            Clk => clk,
+            Q => Program_trig
+        );
+--
+
+
+-- Reset led
+    reset_led <= reset_led_sig;
 
 -- Process to synchronize the Program_mode signal
     process(clk)
     begin
         if rising_edge(clk) then
-            Program_mode_sync <= Program_mode;
+            Program_mode_sync <= Program_trig;
             Program_mode_sync2 <= Program_mode_sync;
         end if;
     end process;
@@ -392,8 +414,6 @@ begin
     zero_led <= '1' when (ALUVal = "0000") else '0';
     Reg_led <= Reg_showed;
 
---For 7_Reset_led
--- reset_led <= reset_led_sig;
 
 --For Load instruction led
 load_instruction_led <= load_instruction_sig;

@@ -37,16 +37,27 @@ end MUX_8way_4bit;
 architecture Behavioral of MUX_8way_4bit is
 begin
 
-    with RegSel select
-        RegVal <= R0 when "000",
-                  R1 when "001",
-                  R2 when "010",
-                  R3 when "011",
-                  R4 when "100",
-                  R5 when "101",
-                  R6 when "110",
-                  R7 when "111",
-                  (others => '0') when others;  -- default output
-                  
+    process(R0, R1, R2, R3, R4, R5, R6, R7, RegSel)
+    begin
+        if RegSel = "000" then
+            RegVal <= R0;
+        elsif RegSel = "001" then
+            RegVal <= R1;
+        elsif RegSel = "010" then
+            RegVal <= R2;
+        elsif RegSel = "011" then
+            RegVal <= R3;
+        elsif RegSel = "100" then
+            RegVal <= R4;
+        elsif RegSel = "101" then
+            RegVal <= R5;
+        elsif RegSel = "110" then
+            RegVal <= R6;
+        elsif RegSel = "111" then
+            RegVal <= R7;
+        else
+            RegVal <= (others => '0');
+        end if;
+    end process;
 
 end Behavioral;

@@ -9,3 +9,44 @@
 # Log file: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/vivado.log
 # Journal file: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor\vivado.jou
 #-----------------------------------------------------------
+start_gui
+open_project {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/Nano_processor.xpr}
+update_compile_order -fileset sources_1
+open_run impl_1
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+add_files -norecurse {{D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/Nano_processor.srcs/sources_1/new/Decoder_2_to_4.vhd}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1

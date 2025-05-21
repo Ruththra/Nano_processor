@@ -40,6 +40,7 @@ read_vhdl -library xil_defaultlib {
   {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/MUX_8way_4bit.vhd}
   {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_Rom.vhd}
   {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_counter.vhd}
+  {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Program_mode_reg.vhd}
   {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_3.vhd}
   {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/RCA_4.vhd}
   {D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised/Nano_processor/Nano_processor.srcs/sources_1/new/Reg.vhd}

@@ -48,8 +48,8 @@ set_property PACKAGE_PIN T1 [get_ports {Reg_to_show[2]}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {Reg_to_show[2]}]
 
 #Switch for program mode
-set_property PACKAGE_PIN R2 [get_ports {Program_mode}]
-	set_property IOSTANDARD LVCMOS33 [get_ports {Program_mode}]
+#set_property PACKAGE_PIN R2 [get_ports {Program_mode}]
+#	set_property IOSTANDARD LVCMOS33 [get_ports {Program_mode}]
 
 
 ## LEDs
@@ -73,8 +73,8 @@ set_property PACKAGE_PIN V19 [get_ports {Reg_led[3]}]
 	#set_property IOSTANDARD LVCMOS33 [get_ports {led[6]}]
 
 #For reset
-#set_property PACKAGE_PIN V14 [get_ports {Reset_led}]
-#	set_property IOSTANDARD LVCMOS33 [get_ports {Reset_led}]
+set_property PACKAGE_PIN V14 [get_ports {reset_led}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {reset_led}]
 	
 #For load instruction
 set_property PACKAGE_PIN V13 [get_ports {load_instruction_led}]
@@ -141,8 +141,8 @@ set_property PACKAGE_PIN W19 [get_ports load_instruction]
 	set_property IOSTANDARD LVCMOS33 [get_ports load_instruction]
 set_property PACKAGE_PIN T17 [get_ports NextROM]
 	set_property IOSTANDARD LVCMOS33 [get_ports NextROM]
-#set_property PACKAGE_PIN U17 [get_ports Reset]
-#	set_property IOSTANDARD LVCMOS33 [get_ports Reset]
+set_property PACKAGE_PIN U17 [get_ports Program_mode]
+	set_property IOSTANDARD LVCMOS33 [get_ports Program_mode]
 
 
 
