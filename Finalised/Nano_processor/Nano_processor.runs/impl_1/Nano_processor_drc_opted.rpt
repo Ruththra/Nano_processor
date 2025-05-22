@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Wed May 21 15:57:43 2025
+| Date         : Thu May 22 13:41:33 2025
 | Host         : DESKTOP-61TL4JQ running 64-bit major release  (build 9200)
 | Command      : report_drc -file Nano_processor_drc_opted.rpt -pb Nano_processor_drc_opted.pb -rpx Nano_processor_drc_opted.rpx
 | Design       : Nano_processor
@@ -50,9 +50,9 @@ Related violations: <none>
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
 A LUT Slow_Clk_inst/Reg[2]_i_2 is driving clock pin of 3 cells. This could lead to large hold time violations. First few involved cells are:
+    Program_counter_inst/Reg_reg[0] {FDCE}
     Program_counter_inst/Reg_reg[1] {FDCE}
     Program_counter_inst/Reg_reg[2] {FDCE}
-    Program_counter_inst/Reg_reg[0] {FDCE}
 
 Related violations: <none>
 

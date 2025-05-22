@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1747823129">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1747901345">
   <File Type="PWROPT-DCP" Name="Nano_processor_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="Nano_processor_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Nano_processor.tcl"/>

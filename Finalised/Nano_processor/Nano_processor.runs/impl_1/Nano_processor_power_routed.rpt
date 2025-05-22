@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date             : Wed May 21 15:58:34 2025
+| Date             : Thu May 22 13:42:20 2025
 | Host             : DESKTOP-61TL4JQ running 64-bit major release  (build 9200)
 | Command          : report_power -file Nano_processor_power_routed.rpt -pb Nano_processor_power_summary_routed.pb -rpx Nano_processor_power_routed.rpx
 | Design           : Nano_processor
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.085        |
+| Total On-Chip Power (W)  | 0.084        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.013        |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.001 |      428 |       --- |             --- |
-|   LUT as Logic |     0.001 |      138 |     20800 |            0.66 |
+| Slice Logic    |     0.001 |      430 |       --- |             --- |
+|   LUT as Logic |     0.001 |      140 |     20800 |            0.67 |
 |   Register     |    <0.001 |      215 |     41600 |            0.52 |
 |   F7/F8 Muxes  |    <0.001 |       25 |     32600 |            0.08 |
 |   CARRY4       |    <0.001 |       11 |      8150 |            0.13 |
 |   Others       |     0.000 |       15 |       --- |             --- |
-| Signals        |     0.002 |      333 |       --- |             --- |
+| Signals        |     0.002 |      335 |       --- |             --- |
 | I/O            |     0.009 |       43 |       106 |           40.57 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.085 |          |           |                 |
+| Total          |     0.084 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.014 |       0.004 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |

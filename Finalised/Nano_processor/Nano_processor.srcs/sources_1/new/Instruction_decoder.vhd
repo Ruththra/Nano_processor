@@ -27,7 +27,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- 001: NEG   -- 001 RaRaRa 000 0000       -- Negate Ra
 -- 010: MOVI  -- 010 RaRaRa 000 dddd       -- Move immediate value dddd to Ra
 -- 011: JZR   -- 011 RaRaRa 000 dddd       -- Jump to address dddd if Ra is zero
--- 100: MOV   -- 100 RaRaRa RbRbRb 0000    -- Move value from Rb to Ra
+-- 100: MOV   -- 100 RaRaRa RbRbRb 0000    -- Move value from Ra to Rb
 -- 101: AND   -- 101 RaRaRa RbRbRb 0000    -- AND Ra and Rb and store in Ra
 -- 110: OR    -- 110 RaRaRa RbRbRb 0000    -- OR Ra and Rb and store in Ra
 -- 111: XOR   -- 111 RaRaRa RbRbRb 0000    -- XOR Ra and Rb and store in Ra
@@ -96,9 +96,9 @@ begin
         elsif (instruction(12 downto 10) = "100") then
             -- Move instruction
             reg_a <= instruction(9 downto 7);
-            reg_b <= "000";
-            load_sel <= '1';
             reg_en <= instruction(6 downto 4);
+            value <= val_MUX_0;
+
         elsif (instruction(12 downto 10) = "101") then
             -- AND instruction
             reg_a <= instruction(9 downto 7);

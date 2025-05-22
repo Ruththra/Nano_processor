@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date                      : Wed May 21 15:57:50 2025
+| Date                      : Thu May 22 13:41:40 2025
 | Host                      : DESKTOP-61TL4JQ running 64-bit major release  (build 9200)
 | Command                   : report_io -file Nano_processor_io_placed.rpt
 | Design                    : Nano_processor

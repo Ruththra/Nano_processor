@@ -754,3 +754,15 @@ dismissDialog("Report Utilization"); // bv (ch)
 // HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 92 MB. Current time: 5/21/25 2:23:27 PM IST
 // HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 92 MB. Current time: 5/21/25 2:53:27 PM IST
 // HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 92 MB. Current time: 5/21/25 3:23:27 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 92 MB. Current time: 5/21/25 3:53:28 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 91 MB. Current time: 5/22/25 12:29:59 PM IST
+// Elapsed time: 163393 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 27, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (ch): Report Utilization: addNotify
+// 'cq' command handler elapsed time: 3 seconds
+dismissDialog("Report Utilization"); // a (ch)
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 93 MB. Current time: 5/22/25 12:59:42 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 92 MB. Current time: 5/22/25 1:29:40 PM IST
