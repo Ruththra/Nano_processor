@@ -12,6 +12,10 @@
       <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/$_project_name_.bit"/>
       <Properties Property="SLR.COUNT" value="1"/>
     </Object>
+    <Object name="xc7a35t_0_1" gui_info="">
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/$_project_name_.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
   </ObjectList>
   <probeset name="hw project" active="false"/>
 </hwsession>

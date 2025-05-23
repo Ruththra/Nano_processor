@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Tue May 20 15:16:44 2025
+| Date         : Fri May 23 15:43:22 2025
 | Host         : DESKTOP-61TL4JQ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Nano_processor_control_sets_placed.rpt
 | Design       : Nano_processor
@@ -47,11 +47,11 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               0 |            0 |
-| No           | No                    | Yes                    |              29 |            8 |
+| No           | No                    | Yes                    |              29 |            9 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               8 |            2 |
+| Yes          | Yes                   | No                     |               8 |            3 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -61,9 +61,9 @@ Table of Contents
 +-----------------------+----------------------------------+------------------+------------------+----------------+
 |      Clock Signal     |           Enable Signal          | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +-----------------------+----------------------------------+------------------+------------------+----------------+
-|  Slow_Clk_inst/out[0] |                                  | Reset_IBUF       |                1 |              3 |
+|  Slow_Clk_inst/out[0] |                                  | Reset_IBUF       |                2 |              3 |
+|  Slow_Clk_inst/out[0] | Program_counter_inst/Q_reg[0][0] | Reset_IBUF       |                2 |              4 |
 |  Slow_Clk_inst/out[0] | Program_counter_inst/E[0]        | Reset_IBUF       |                1 |              4 |
-|  Slow_Clk_inst/out[0] | Program_counter_inst/Q_reg[0][0] | Reset_IBUF       |                1 |              4 |
 |  clk_IBUF_BUFG        |                                  | Reset_IBUF       |                7 |             26 |
 +-----------------------+----------------------------------+------------------+------------------+----------------+
 

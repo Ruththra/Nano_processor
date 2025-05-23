@@ -187,7 +187,7 @@ begin
 
     LUT_16_7_inst : LUT_16_7
         port map (
-            address => Out_1,
+            address => Out_7,
             data => Reg7_digit
         );
 
