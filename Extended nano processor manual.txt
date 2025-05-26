@@ -1,0 +1,10 @@
+MANUAL FOR EXTENDED NANO PROCESSOR
+
+The programming process begins by toggling the Program_mode button (bottom button) to enter Program Mode. If needed, the ROM_reset button (top button) can be
+pressed to clear all contents in the Program_ROM. The user then sets a 13-bit instruction
+using the 13 rightmost DIP switches. Once the instruction is configured, it is loaded
+into the current ROM address by pressing the load_instruction button (left button).
+The NextROM button (right button) is used to increment the ROM address, allowing the
+user to program the next instruction. After all desired instructions have been entered,
+pressing the Program_mode button again exits Program Mode and returns the system
+to normal execution.

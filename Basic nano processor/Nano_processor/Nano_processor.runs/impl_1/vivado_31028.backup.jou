@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon May 26 20:03:58 2025
+# Process ID: 31028
+# Current directory: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/Nano_processor.runs/impl_1
+# Command line: vivado.exe -log Nano_processor.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Nano_processor.tcl -notrace
+# Log file: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/Nano_processor.runs/impl_1/Nano_processor.vdi
+# Journal file: D:/Uni/2nd sem/Computer Organization and Digital Design/Nano processor/Finalised competition/Nano_processor/Nano_processor.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Nano_processor.tcl -notrace
